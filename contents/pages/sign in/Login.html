@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="signin.css">
+<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+<!-- <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
-        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet"> -->
   <title>Log In</title>
 </head>
 
@@ -62,22 +64,20 @@
                             <br>  <br>    <br>
                             
                                                  <!-- navbar end -->
-                      <div class="logincenter">
   <div class="container-fluid">
   
       
-        <form id="my-form" class="form-container" onsubmit="return validateFn()" action=>
-            <h2>Log In</h2>
+        <form id="my-form" class="form-container" onsubmit="return validateFn()" action="welcome.html">
+            <h2>Sign In</h2>
 <!-- ########################################"Email"################################################################## -->            
-            <div class="form-check1">
+            <div class="form-check">
               <i class="icon ion-ios-mail"></i>
-              <input id="email" placeholder="Email" type="email"><br><br>
+              <input id="email" placeholder="Email" type="email">
               <small> </small> 
             </div>
-
 <!-- #######################################"Password"################################################################### -->
  
-            <div class="form-check2">            
+            <div class="form-check">            
                 <i class="icon ion-ios-key"></i>
                 <input id="pass" class="myInput" type="Password" placeholder="Password">
                 <span class="eye" onclick="myfn()">
@@ -85,21 +85,25 @@
                   <i id="hide2" class="icon ion-ios-eye"></i>
                 </span>
                 <small> </small>
-              </div> <br>
+              </div> <br><br>
 <!-- ####################################### Check box & forgot pass ################################################################### -->
             
               <input type="checkbox" checked="checked" name="remember"> Remember me
-              <span class="forgotpsw">Forgot <a href="#">password?</a></span> <br><br>
+              <span class="forgotpsw">Forgot <a href="#">password?</a></span> <br><br><br><br>
               <span class="creatacc">Don't have an account yet? Then click here to <a href="../sign up page/signup.html" style="font-size: 18px; font-weight: 500; font-style: italic;">Sign up </a></span>
             
 <!-- ####################################### Button ################################################################### -->
           
-              <br><br>      
-          <button type="submit" class="btn"><span class="sub">Submit</span></button>
+              <br><br><br>       
+          <button type="submit" class="bttn"><span class="sub">Submit</span></button>
 
         </form>
-      </div>
       
   </div>   
+
+<script src="signin.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+        
 </body>
 </html>
